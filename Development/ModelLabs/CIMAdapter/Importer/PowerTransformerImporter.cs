@@ -127,7 +127,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 				report.Report.AppendLine();
 			}
 		}
-
 		private ResourceDescription CreateEquipmentContainerResourceDescription(FTN.EquipmentContainer cimEquipmentContainer)
 		{
 			ResourceDescription rd = null;
@@ -166,7 +165,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 				report.Report.AppendLine();
 			}
 		}
-
 		private ResourceDescription CreateSwitchResourceDescription(FTN.Switch cimSwitch)
 		{
 			ResourceDescription rd = null;
@@ -205,7 +203,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 				report.Report.AppendLine();
 			}
 		}
-
 		private ResourceDescription CreateTerminalResourceDescription(FTN.Terminal cimTerminal)
 		{
 			ResourceDescription rd = null;
@@ -244,7 +241,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 				report.Report.AppendLine();
 			}
 		}
-
 		private ResourceDescription CreateMeasurementResourceDescription(FTN.Measurement cimMeasurement)
 		{
 			ResourceDescription rd = null;
@@ -283,7 +279,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 				report.Report.AppendLine();
 			}
 		}
-
 		private ResourceDescription CreateTopologicalNodeResourceDescription(FTN.TopologicalNode cimTopologicalNode)
 		{
 			ResourceDescription rd = null;
@@ -322,7 +317,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 				report.Report.AppendLine();
 			}
 		}
-
 		private ResourceDescription CreateConnectivityNodeResourceDescription(FTN.ConnectivityNode cimConnectivityNode)
 		{
 			ResourceDescription rd = null;
