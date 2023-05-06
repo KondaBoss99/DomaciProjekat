@@ -3,11 +3,6 @@
 		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
 	</cim:EquipmentContainer>
-	<cim:PowerSystemResource rdf:ID=" ">
-		<cim:IdentifiedObject.aliasName></cim:IdentifiedObject.aliasName>
-		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
-		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
-	</cim:PowerSystemResource>
 	<cim:Terminal rdf:ID=" ">
 		<cim:Terminal.ConductingEquipment rdf:resource="#"/>
 		<cim:Terminal.ConnectivityNode rdf:resource="#"/>
@@ -35,14 +30,6 @@
 		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
 	</cim:Switch>
-	<cim:ConductingEquipment rdf:ID=" ">
-		<cim:Equipment.aggregate></cim:Equipment.aggregate>
-		<cim:Equipment.EquipmentContainer rdf:resource="#"/>
-		<cim:Equipment.normallyInService></cim:Equipment.normallyInService>
-		<cim:IdentifiedObject.aliasName></cim:IdentifiedObject.aliasName>
-		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
-		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
-	</cim:ConductingEquipment>
 	<cim:ConnectivityNode rdf:ID=" ">
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#"/>
 		<cim:ConnectivityNode.TopologicalNode rdf:resource="#"/>
@@ -50,19 +37,6 @@
 		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
 	</cim:ConnectivityNode>
-	<cim:ConnectivityNodeContainer rdf:ID=" ">
-		<cim:IdentifiedObject.aliasName></cim:IdentifiedObject.aliasName>
-		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
-		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
-	</cim:ConnectivityNodeContainer>
-	<cim:Equipment rdf:ID=" ">
-		<cim:Equipment.aggregate></cim:Equipment.aggregate>
-		<cim:Equipment.EquipmentContainer rdf:resource="#"/>
-		<cim:Equipment.normallyInService></cim:Equipment.normallyInService>
-		<cim:IdentifiedObject.aliasName></cim:IdentifiedObject.aliasName>
-		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
-		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
-	</cim:Equipment>
 	<cim:TopologicalNode rdf:ID=" ">
 		<cim:IdentifiedObject.aliasName></cim:IdentifiedObject.aliasName>
 		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
