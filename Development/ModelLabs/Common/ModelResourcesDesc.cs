@@ -866,12 +866,12 @@ namespace FTN.Common
 //Proveri redosled
 		private void InitializeTypeIdsInInsertOrder()
 		{			
-			typeIdsInInsertOrder.Add(ModelCode.TOPOLOGICALNODE);
-			typeIdsInInsertOrder.Add(ModelCode.CONNECTIVITYNODE);
+			typeIdsInInsertOrder.Add(ModelCode.EQUIPMENTCONTAINER);	
+			typeIdsInInsertOrder.Add(ModelCode.SWITCH);
 			typeIdsInInsertOrder.Add(ModelCode.TERMINAL);
 			typeIdsInInsertOrder.Add(ModelCode.MEASUREMENT);
-			typeIdsInInsertOrder.Add(ModelCode.EQUIPMENTCONTAINER);			
-			typeIdsInInsertOrder.Add(ModelCode.SWITCH);			
+			typeIdsInInsertOrder.Add(ModelCode.TOPOLOGICALNODE);
+			typeIdsInInsertOrder.Add(ModelCode.CONNECTIVITYNODE);
 		}
 
 		private void InitializeNotSettablePropertyIds()
