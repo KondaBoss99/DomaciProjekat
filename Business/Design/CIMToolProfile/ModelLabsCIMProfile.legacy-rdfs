@@ -161,7 +161,6 @@ For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about a
   <rdf:Description rdf:about="#ConnectivityNodeContainer">
     <rdfs:subClassOf rdf:resource="#PowerSystemResource"/>
     <cims:belongsToCategory rdf:resource="#Package_IES_Projects"/>
-    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdfs:comment>A base class for all objects that may contain connectivity nodes or topological nodes.</rdfs:comment>
     <rdfs:label>ConnectivityNodeContainer</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>

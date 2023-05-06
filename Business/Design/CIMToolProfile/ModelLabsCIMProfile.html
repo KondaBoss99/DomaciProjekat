@@ -164,13 +164,14 @@ p.package { position: absolute; right: 10px; top: 0px}
 </tr>
 </table>
 </div>
-<div id="ConnectivityNodeContainer" class="group">
-<a href="#ConnectivityNodeContainer">
-<h2 class="concrete">ConnectivityNodeContainer</h2>
+<div id="EquipmentContainer" class="group">
+<a href="#EquipmentContainer">
+<h2 class="concrete">EquipmentContainer</h2>
 </a>
-<p class="package">IES_Projects</p>
-<p class="comment">A base class for all objects that may contain connectivity nodes or topological nodes.</p>
+<p class="package">Core</p>
+<p class="comment">A modeling construct to provide a root class for containing equipment.</p>
 <h3>Inherited Members</h3>
+<table/>
 <table/>
 <table>
 <tr>
@@ -219,14 +220,6 @@ p.package { position: absolute; right: 10px; top: 0px}
 </td>
 </tr>
 </table>
-</div>
-<div id="EquipmentContainer" class="group">
-<a href="#EquipmentContainer">
-<h2 class="concrete">EquipmentContainer</h2>
-</a>
-<p class="package">Core</p>
-<p class="comment">A modeling construct to provide a root class for containing equipment.</p>
-<h3>Inherited Members</h3>
 </div>
 <div id="Measurement" class="group">
 <a href="#Measurement">
@@ -690,6 +683,62 @@ p.package { position: absolute; right: 10px; top: 0px}
 </td>
 </tr>
 </table>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ConnectivityNodeContainer" class="group">
+<a href="#ConnectivityNodeContainer">
+<h2 class="abstract">ConnectivityNodeContainer</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">A base class for all objects that may contain connectivity nodes or topological nodes.</p>
+<h3>Inherited Members</h3>
 <table/>
 <table>
 <tr>

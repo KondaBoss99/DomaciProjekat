@@ -30,7 +30,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ConnectivityNodeContainer">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdfs:subClassOf rdf:resource="#PowerSystemResource"/>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#ConnectivityNodeContainer"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
