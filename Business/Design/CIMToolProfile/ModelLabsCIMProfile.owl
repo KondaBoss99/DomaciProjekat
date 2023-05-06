@@ -144,7 +144,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
   <rdf:Description rdf:about="#PowerSystemResource">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#PowerSystemResource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -155,7 +154,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ConductingEquipment">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdfs:subClassOf rdf:resource="#Equipment"/>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#ConductingEquipment"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -196,7 +194,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#Equipment">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdfs:subClassOf rdf:nodeID="Xd2X3638c3eXa3X187f1f54eb1Xa3X-7fdd"/>
     <rdfs:subClassOf rdf:nodeID="Xd2X3638c3eXa3X187f1f54eb1Xa3X-7fe0"/>
     <rdfs:subClassOf rdf:nodeID="Xd2X3638c3eXa3X187f1f54eb1Xa3X-7fe3"/>

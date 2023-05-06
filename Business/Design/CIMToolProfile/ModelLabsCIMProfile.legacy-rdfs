@@ -122,7 +122,6 @@ Currently, normative parts of the model support the needs of information exchang
   <rdf:Description rdf:about="#ConductingEquipment">
     <rdfs:subClassOf rdf:resource="#Equipment"/>
     <cims:belongsToCategory rdf:resource="#Package_IES_Projects"/>
-    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdfs:comment>The parts of the power system that are designed to carry current or that are conductively connected through terminals.</rdfs:comment>
     <rdfs:label>ConductingEquipment</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
@@ -138,7 +137,6 @@ Currently, normative parts of the model support the needs of information exchang
   <rdf:Description rdf:about="#Equipment">
     <rdfs:subClassOf rdf:resource="#PowerSystemResource"/>
     <cims:belongsToCategory rdf:resource="#Package_IES_Projects"/>
-    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdfs:comment>The parts of a power system that are physical devices, electronic or mechanical.</rdfs:comment>
     <rdfs:label>Equipment</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
@@ -290,7 +288,6 @@ When the sensor location is needed both Measurement-PSR and Measurement-Terminal
   <rdf:Description rdf:about="#PowerSystemResource">
     <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
     <cims:belongsToCategory rdf:resource="#Package_Core"/>
-    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdfs:comment>A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.</rdfs:comment>
     <rdfs:label>PowerSystemResource</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
