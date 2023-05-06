@@ -90,6 +90,17 @@
     <Compile Include="Core\Location.cs" />
     <Compile Include="Core\IdentifiedObject.cs" />
     <Compile Include="Core\PowerSystemResource.cs" />
+    <Compile Include="Entities\ConductingEquipment.cs" />
+    <Compile Include="Entities\ConnectivityNode.cs" />
+    <Compile Include="Entities\ConnectivityNodeContainer.cs" />
+    <Compile Include="Entities\Equipment.cs" />
+    <Compile Include="Entities\EquipmentContainer.cs" />
+    <Compile Include="Entities\IdentifiedObject.cs" />
+    <Compile Include="Entities\Measurement.cs" />
+    <Compile Include="Entities\PowerSystemResource.cs" />
+    <Compile Include="Entities\Switch.cs" />
+    <Compile Include="Entities\Terminal.cs" />
+    <Compile Include="Entities\TopologicalNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Wires\WindingTest.cs" />
     <Compile Include="Wires\PowerTransformer.cs" />

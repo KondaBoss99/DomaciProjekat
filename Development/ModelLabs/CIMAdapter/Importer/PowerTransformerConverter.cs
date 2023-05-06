@@ -8,7 +8,6 @@
 	/// </summary>
 	public static class PowerTransformerConverter
 	{
-
 		#region Populate ResourceDescription
 		public static void PopulateIdentifiedObjectProperties(FTN.IdentifiedObject cimIdentifiedObject, ResourceDescription rd)
 		{
