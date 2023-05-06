@@ -862,8 +862,8 @@ namespace FTN.Common
 			return (ModelCode)Enum.Parse(typeof(ModelCode), type.ToString());
 		}
 
-		# region Initialization of metadata
-
+		#region Initialization of metadata
+//Proveri redosled
 		private void InitializeTypeIdsInInsertOrder()
 		{			
 			typeIdsInInsertOrder.Add(ModelCode.TOPOLOGICALNODE);
