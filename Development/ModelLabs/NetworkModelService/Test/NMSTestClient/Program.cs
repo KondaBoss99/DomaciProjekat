@@ -135,7 +135,6 @@ namespace FTN.Services.NetworkModelService.TestClient
 			Console.WriteLine("\t1) Get values");
 			Console.WriteLine("\t2) Get extent values");
 			Console.WriteLine("\t3) Get related values");
-            Console.WriteLine("\t4) Test apply update");
 			Console.WriteLine("\tq) Quit");
 		}
 
