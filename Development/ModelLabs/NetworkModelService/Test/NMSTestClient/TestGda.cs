@@ -56,14 +56,17 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 						
 			try
 			{
+                //TODO 2 Zapamt ovede su ti setovani property koji su zajednicki za polja tako je setovano i za get values/get extended values/ get related values
 				short type = ModelCodeHelper.ExtractTypeFromGlobalId(globalId);
-				List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds((DMSType)type);
+                List<ModelCode> properties = new List<ModelCode> { ModelCode.IDOBJ_GID };
+                    //modelResourcesDesc.GetAllPropertyIds((DMSType)type);
 
                 rd = GdaQueryProxy.GetValues(globalId, properties);
 
                 xmlWriter = new XmlTextWriter(Config.Instance.ResultDirecotry + "\\GetValues_Results.xml", Encoding.Unicode);
 				xmlWriter.Formatting = Formatting.Indented;
 				rd.ExportToXml(xmlWriter);
+                rd.ExportToTerminal();
 				xmlWriter.Flush();
 
                 message = "Getting values method successfully finished.";
@@ -103,7 +106,7 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 				int resourcesLeft = 0;
 
                 List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds(modelCode);
-				
+				  
 				iteratorId = GdaQueryProxy.GetExtentValues(modelCode, properties);
 				resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
 								
@@ -119,6 +122,7 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 					{
 						ids.Add(rds[i].Id);
 						rds[i].ExportToXml(xmlWriter);
+                        rds[i].ExportToTerminal();
 						xmlWriter.Flush();
 					}
 
@@ -182,6 +186,7 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 					{
 						resultIds.Add(rds[i].Id);
 						rds[i].ExportToXml(xmlWriter);
+						rds[i].ExportToTerminal();
 						xmlWriter.Flush();
 					}
 							
