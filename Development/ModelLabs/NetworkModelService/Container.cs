@@ -8,8 +8,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Xml;
 using FTN.Common;
-using FTN.Services.NetworkModelService.DataModel.Core;
-using FTN.Services.NetworkModelService.DataModel.Wires;
+using FTN.Services.NetworkModelService.DataModel.Entities;
 using FTN.Services.NetworkModelService.DataModel;
 
 
@@ -122,22 +121,24 @@ namespace FTN.Services.NetworkModelService
 			IdentifiedObject io = null;			
 			switch ((DMSType)type)
 			{
-				case DMSType.BASEVOLTAGE:
-					io = new BaseVoltage(globalId);
+				case DMSType.EQUIPMENTCONTAINER:
+					io = new EquipmentContainer(globalId);
 					break;
-
-				case DMSType.LOCATION:
-					io = new Location(globalId);
+				case DMSType.SWITCH:
+					io = new Switch(globalId);
 					break;
-				case DMSType.POWERTR:
-					io = new PowerTransformer(globalId);
+				case DMSType.TERMINAL:
+					io = new Terminal(globalId);
 					break;
-				case DMSType.POWERTRWINDING:
-					io = new TransformerWinding(globalId);
+				case DMSType.MEASUREMENT:
+					io = new Measurement(globalId);
 					break;
-				case DMSType.WINDINGTEST:
-					io = new WindingTest(globalId);
-					break;			
+				case DMSType.TOPOLOGICALNODE:
+					io = new TopologicalNode(globalId);
+					break;
+				case DMSType.CONNECTIVITYNODE:
+					io = new ConnectivityNode(globalId);
+					break;
 
 				default:					
 					string message = String.Format("Failed to create entity because specified type ({0}) is not supported.", type);
