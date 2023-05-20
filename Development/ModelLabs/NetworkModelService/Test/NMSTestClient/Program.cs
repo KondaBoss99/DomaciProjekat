@@ -213,7 +213,7 @@ namespace FTN.Services.NetworkModelService.TestClient
         {
             CommonTrace.WriteTrace(CommonTrace.TraceVerbose, "Entering association started.");
             Association association = new Association();
-
+            //TODO 3 zakucati vrednosti 
             try
             {
                 Console.Write("Entering  association\n");
@@ -236,6 +236,7 @@ namespace FTN.Services.NetworkModelService.TestClient
                 }
 
                 association.PropertyId = modelCode;
+                //association.PropertyId = ModelCode.CONDUCTINGEQUIPMENT_TERMINALS;
 
                 Console.Write("Enter type: ");
 
@@ -255,6 +256,7 @@ namespace FTN.Services.NetworkModelService.TestClient
                 }
 
                 association.Type = modelCode;
+                //association.Type = ModelCode.TERMINAL;
 
                 return association;
             }

@@ -2,16 +2,16 @@
 <rdf:RDF	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
 	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
-	<cim:EquipmentContainer rdf:ID=" ">
-		<cim:IdentifiedObject.aliasName></cim:IdentifiedObject.aliasName>
-		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
-		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
+	<cim:EquipmentContainer rdf:ID="001">
+		<cim:IdentifiedObject.aliasName>Spondola</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Gordola</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Kordola</cim:IdentifiedObject.name>
 	</cim:EquipmentContainer>
 
 
-	<cim:TopologicalNode rdf:ID=" ">
-		<cim:IdentifiedObject.aliasName></cim:IdentifiedObject.aliasName>
-		<cim:IdentifiedObject.mRID></cim:IdentifiedObject.mRID>
-		<cim:IdentifiedObject.name></cim:IdentifiedObject.name>
+	<cim:TopologicalNode rdf:ID="002">
+		<cim:IdentifiedObject.aliasName>Kitola</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Ptiola</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Bitola</cim:IdentifiedObject.name>
 	</cim:TopologicalNode>
 </rdf:RDF>
