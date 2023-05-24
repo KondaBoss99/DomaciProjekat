@@ -1,0 +1,244 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="23">
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="TOPOLOGICALNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TOPOLOGICAL_NODE_1" />
+            <Property id="IDOBJ_NAME" value="Topological Node 1" />
+            <Property id="IDOBJ_ALIASNAME" value="TopNode1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffe" type="TOPOLOGICALNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TOPOLOGICAL_NODE_2" />
+            <Property id="IDOBJ_NAME" value="Topological Node 2" />
+            <Property id="IDOBJ_ALIASNAME" value="TopNode2" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffd" type="TOPOLOGICALNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TOPOLOGICAL_NODE_3" />
+            <Property id="IDOBJ_NAME" value="Topological Node 3" />
+            <Property id="IDOBJ_ALIASNAME" value="TopNode3" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="EQUIPMENTCONTAINER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="EQUIPMENT_CONTAINER_1" />
+            <Property id="IDOBJ_NAME" value="Equipment Container 1" />
+            <Property id="IDOBJ_ALIASNAME" value="EquipCont1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffe" type="EQUIPMENTCONTAINER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="EQUIPMENT_CONTAINER_2" />
+            <Property id="IDOBJ_NAME" value="Equipment Container 2" />
+            <Property id="IDOBJ_ALIASNAME" value="EquipCont2" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffd" type="EQUIPMENTCONTAINER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="EQUIPMENT_CONTAINER_3" />
+            <Property id="IDOBJ_NAME" value="Equipment Container 3" />
+            <Property id="IDOBJ_ALIASNAME" value="EquipCont3" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006ffffffff" type="SWITCH" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SWITCH_1" />
+            <Property id="IDOBJ_NAME" value="Switch 1" />
+            <Property id="IDOBJ_ALIASNAME" value="Sw1" />
+            <Property id="EQUIPMENT_AGGREGATE" value="0" />
+            <Property id="EQUIPMENT_NORMALLYINSERVICE" value="0" />
+            <Property id="EQUIPMENT_EQUIPMENTCONTAINER" value="0x00000005ffffffff" />
+            <Property id="SWITCH_NORMALOPEN" value="1" />
+            <Property id="SWITCH_RATEDCURRENT" value="82795.31" />
+            <Property id="SWITCH_RETAINED" value="1" />
+            <Property id="SWITCH_SWITCHONCOUNT" value="3" />
+            <Property id="SWITCH_SWITCHONDATE" value="638135712000000000" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffe" type="SWITCH" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SWITCH_2" />
+            <Property id="IDOBJ_NAME" value="Switch 2" />
+            <Property id="IDOBJ_ALIASNAME" value="Sw2" />
+            <Property id="EQUIPMENT_AGGREGATE" value="0" />
+            <Property id="EQUIPMENT_NORMALLYINSERVICE" value="1" />
+            <Property id="EQUIPMENT_EQUIPMENTCONTAINER" value="0x00000005ffffffff" />
+            <Property id="SWITCH_NORMALOPEN" value="1" />
+            <Property id="SWITCH_RATEDCURRENT" value="795.1" />
+            <Property id="SWITCH_RETAINED" value="1" />
+            <Property id="SWITCH_SWITCHONCOUNT" value="5" />
+            <Property id="SWITCH_SWITCHONDATE" value="638267904000000000" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffd" type="SWITCH" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SWITCH_3" />
+            <Property id="IDOBJ_NAME" value="Switch 3" />
+            <Property id="IDOBJ_ALIASNAME" value="Sw3" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORMALLYINSERVICE" value="0" />
+            <Property id="EQUIPMENT_EQUIPMENTCONTAINER" value="0x00000005fffffffe" />
+            <Property id="SWITCH_NORMALOPEN" value="1" />
+            <Property id="SWITCH_RATEDCURRENT" value="895.3" />
+            <Property id="SWITCH_RETAINED" value="0" />
+            <Property id="SWITCH_SWITCHONCOUNT" value="7" />
+            <Property id="SWITCH_SWITCHONDATE" value="638111520000000000" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="CONNECTIVITYNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="CONNECTIVITY_NODE_1" />
+            <Property id="IDOBJ_NAME" value="Connectivity Node 1" />
+            <Property id="IDOBJ_ALIASNAME" value="ConNode1" />
+            <Property id="CONNECTIVITYNODE_TOPOLOGICALNODE" value="0x00000001fffffffd" />
+            <Property id="CONNECTIVITYNODE_CONNECTIVITYNODECONTAINER" value="0x00000005fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffe" type="CONNECTIVITYNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="CONNECTIVITY_NODE_2" />
+            <Property id="IDOBJ_NAME" value="Connectivity Node 2" />
+            <Property id="IDOBJ_ALIASNAME" value="ConNode2" />
+            <Property id="CONNECTIVITYNODE_TOPOLOGICALNODE" value="0x00000001fffffffe" />
+            <Property id="CONNECTIVITYNODE_CONNECTIVITYNODECONTAINER" value="0x00000005fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffd" type="CONNECTIVITYNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="CONNECTIVITY_NODE_3" />
+            <Property id="IDOBJ_NAME" value="Connectivity Node 3" />
+            <Property id="IDOBJ_ALIASNAME" value="ConNode3" />
+            <Property id="CONNECTIVITYNODE_TOPOLOGICALNODE" value="0x00000001ffffffff" />
+            <Property id="CONNECTIVITYNODE_CONNECTIVITYNODECONTAINER" value="0x00000005fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TERMINAL_1" />
+            <Property id="IDOBJ_NAME" value="Terminal 1" />
+            <Property id="IDOBJ_ALIASNAME" value="Ter1" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000002fffffffe" />
+            <Property id="TERMINAL_CONDUCTINGEQUIPMENT" value="0x00000006fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffe" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TERMINAL_2" />
+            <Property id="IDOBJ_NAME" value="Terminal 2" />
+            <Property id="IDOBJ_ALIASNAME" value="Ter2" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000002fffffffe" />
+            <Property id="TERMINAL_CONDUCTINGEQUIPMENT" value="0x00000006fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffd" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TERMINAL_3" />
+            <Property id="IDOBJ_NAME" value="Terminal 3" />
+            <Property id="IDOBJ_ALIASNAME" value="Ter3" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000002ffffffff" />
+            <Property id="TERMINAL_CONDUCTINGEQUIPMENT" value="0x00000006fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffc" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TERMINAL_4" />
+            <Property id="IDOBJ_NAME" value="Terminal 4" />
+            <Property id="IDOBJ_ALIASNAME" value="Ter4" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000002ffffffff" />
+            <Property id="TERMINAL_CONDUCTINGEQUIPMENT" value="0x00000006fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffb" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TERMINAL_5" />
+            <Property id="IDOBJ_NAME" value="Terminal 5" />
+            <Property id="IDOBJ_ALIASNAME" value="Ter5" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000002ffffffff" />
+            <Property id="TERMINAL_CONDUCTINGEQUIPMENT" value="0x00000006ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="MEASUREMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="MEASUREMENT_1" />
+            <Property id="IDOBJ_NAME" value="Measurement 1" />
+            <Property id="IDOBJ_ALIASNAME" value="Meas1" />
+            <Property id="MEASUREMENT_TERMINAL" value="0x00000003ffffffff" />
+            <Property id="MEASUREMENT_POWERSYSTEMRESOURCE" value="0x00000006fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffe" type="MEASUREMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="MEASUREMENT_2" />
+            <Property id="IDOBJ_NAME" value="Measurement 2" />
+            <Property id="IDOBJ_ALIASNAME" value="Meas2" />
+            <Property id="MEASUREMENT_TERMINAL" value="0x00000003fffffffe" />
+            <Property id="MEASUREMENT_POWERSYSTEMRESOURCE" value="0x00000006fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffd" type="MEASUREMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="MEASUREMENT_3" />
+            <Property id="IDOBJ_NAME" value="Measurement 3" />
+            <Property id="IDOBJ_ALIASNAME" value="Meas3" />
+            <Property id="MEASUREMENT_TERMINAL" value="0x00000003fffffffe" />
+            <Property id="MEASUREMENT_POWERSYSTEMRESOURCE" value="0x00000005fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffc" type="MEASUREMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="MEASUREMENT_4" />
+            <Property id="IDOBJ_NAME" value="Measurement 4" />
+            <Property id="IDOBJ_ALIASNAME" value="Meas4" />
+            <Property id="MEASUREMENT_TERMINAL" value="0x00000003fffffffc" />
+            <Property id="MEASUREMENT_POWERSYSTEMRESOURCE" value="0x00000005fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffb" type="MEASUREMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="MEASUREMENT_5" />
+            <Property id="IDOBJ_NAME" value="Measurement 5" />
+            <Property id="IDOBJ_ALIASNAME" value="Meas5" />
+            <Property id="MEASUREMENT_TERMINAL" value="0x00000003fffffffc" />
+            <Property id="MEASUREMENT_POWERSYSTEMRESOURCE" value="0x00000006ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffa" type="MEASUREMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="MEASUREMENT_6" />
+            <Property id="IDOBJ_NAME" value="Measurement 6" />
+            <Property id="IDOBJ_ALIASNAME" value="Meas6" />
+            <Property id="MEASUREMENT_TERMINAL" value="0x00000003fffffffc" />
+            <Property id="MEASUREMENT_POWERSYSTEMRESOURCE" value="0x00000006ffffffff" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>
