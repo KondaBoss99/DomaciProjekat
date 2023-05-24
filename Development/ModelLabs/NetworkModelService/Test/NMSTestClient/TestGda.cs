@@ -56,10 +56,8 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 						
 			try
 			{
-                //TODO 2 Zapamt ovede su ti setovani property koji su zajednicki za polja tako je setovano i za get values/get extended values/ get related values
 				short type = ModelCodeHelper.ExtractTypeFromGlobalId(globalId);
-                List<ModelCode> properties = new List<ModelCode> { ModelCode.IDOBJ_GID };
-                    //modelResourcesDesc.GetAllPropertyIds((DMSType)type);
+                var properties = modelResourcesDesc.GetAllPropertyIds((DMSType)type);
 
                 rd = GdaQueryProxy.GetValues(globalId, properties);
 
@@ -90,7 +88,7 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 			return rd;
 		}
 
-		public List<long> GetExtentValues(ModelCode modelCode)
+		public List<long> GetExtentValues(ModelCode modelCode, bool skipLogging = false)
 		{
             string message = "Getting extent values method started.";
             Console.WriteLine(message);
@@ -121,8 +119,13 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 					for (int i = 0; i < rds.Count; i++)
 					{
 						ids.Add(rds[i].Id);
-						rds[i].ExportToXml(xmlWriter);
-                        rds[i].ExportToTerminal();
+
+                        if (!skipLogging)
+                        {
+                            rds[i].ExportToXml(xmlWriter);
+                            rds[i].ExportToTerminal();
+                        }
+						
 						xmlWriter.Flush();
 					}
 
@@ -153,7 +156,7 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 			return ids;
 		}
 
-		public List<long> GetRelatedValues(long sourceGlobalId, Association association)
+		public List<long> GetRelatedValues(long sourceGlobalId, Association association, bool skipLogging = false)
 		{
             string message = "Getting related values method started.";
             Console.WriteLine(message);
@@ -185,8 +188,13 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 					for (int i = 0; i < rds.Count; i++)
 					{
 						resultIds.Add(rds[i].Id);
-						rds[i].ExportToXml(xmlWriter);
-						rds[i].ExportToTerminal();
+
+                        if (!skipLogging)
+                        {
+                            rds[i].ExportToXml(xmlWriter);
+                            rds[i].ExportToTerminal();
+                        }
+
 						xmlWriter.Flush();
 					}
 							
@@ -215,6 +223,16 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 						
 			return resultIds;
 		}
+
+        public List<long> GetMeasurementsForTerminalWithNextToLastHighestGID()
+        {
+            var terminalWithNextToLastHighestGid = GetExtentValues(ModelCode.TERMINAL, skipLogging: true)
+                .OrderByDescending(x => x)
+                .Skip(1).Take(1)
+                .FirstOrDefault();
+
+            return GetRelatedValues(terminalWithNextToLastHighestGid, new Association(ModelCode.TERMINAL_MEASUREMENTS, ModelCode.MEASUREMENT));
+        }
 
         #endregion GDAQueryService
 

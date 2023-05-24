@@ -9,7 +9,6 @@ namespace FTN.Common
 	{		
 		MASK_TYPE										= unchecked((short)0xFFFF),
 
-		// vodi racuna o redosledu
 		// concrete classes
 		TOPOLOGICALNODE									= 0x0001,
 		CONNECTIVITYNODE								= 0x0002,
@@ -69,7 +68,7 @@ namespace FTN.Common
 
 		SWITCH											= 0x1521200000060000,
 		SWITCH_NORMALOPEN								= 0x1521200000060101,
-		SWITCH_RATEDCURRENT								= 0x1521200000060207,
+		SWITCH_RATEDCURRENT								= 0x1521200000060205,
 		SWITCH_RETAINED									= 0x1521200000060301,
 		SWITCH_SWITCHONCOUNT							= 0x1521200000060403,
 		SWITCH_SWITCHONDATE								= 0x1521200000060508,

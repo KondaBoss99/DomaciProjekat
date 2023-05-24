@@ -100,16 +100,29 @@ namespace FTN.Services.NetworkModelService.TestClient
                     {
                         try
                         {
-                            tgda.TestApplyDeltaInsert();
+                            tgda.GetMeasurementsForTerminalWithNextToLastHighestGID();
                         }
                         catch (Exception ex)
                         {
-                            message = string.Format("Test ApplyUpdate: Insert - Update - Delte failed. {0}", ex.Message);
+                            message = string.Format("GetRelatedValues failed. {0}", ex.Message);
                             Console.WriteLine(message);
                             CommonTrace.WriteTrace(CommonTrace.TraceError, message);
                         }
                     }
-					else if (str != "q")
+                    //else if (str == "4")
+                    //{
+                    //    try
+                    //    {
+                    //        tgda.TestApplyDeltaInsert();
+                    //    }
+                    //    catch (Exception ex)
+                    //    {
+                    //        message = string.Format("Test ApplyUpdate: Insert - Update - Delte failed. {0}", ex.Message);
+                    //        Console.WriteLine(message);
+                    //        CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+                    //    }
+                    //}
+                    else if (str != "q")
 					{
 						PrintUnknownOption();
 					}
@@ -135,7 +148,8 @@ namespace FTN.Services.NetworkModelService.TestClient
 			Console.WriteLine("\t1) Get values");
 			Console.WriteLine("\t2) Get extent values");
 			Console.WriteLine("\t3) Get related values");
-			Console.WriteLine("\tq) Quit");
+			Console.WriteLine("\t4) Get Measurements for Terminal with next to last highest GID");
+            Console.WriteLine("\tq) Quit");
 		}
 
         #region Help methods
@@ -213,7 +227,6 @@ namespace FTN.Services.NetworkModelService.TestClient
         {
             CommonTrace.WriteTrace(CommonTrace.TraceVerbose, "Entering association started.");
             Association association = new Association();
-            //TODO 3 zakucati vrednosti 
             try
             {
                 Console.Write("Entering  association\n");
@@ -236,7 +249,6 @@ namespace FTN.Services.NetworkModelService.TestClient
                 }
 
                 association.PropertyId = modelCode;
-                //association.PropertyId = ModelCode.CONDUCTINGEQUIPMENT_TERMINALS;
 
                 Console.Write("Enter type: ");
 
@@ -256,7 +268,6 @@ namespace FTN.Services.NetworkModelService.TestClient
                 }
 
                 association.Type = modelCode;
-                //association.Type = ModelCode.TERMINAL;
 
                 return association;
             }

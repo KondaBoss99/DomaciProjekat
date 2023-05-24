@@ -863,15 +863,15 @@ namespace FTN.Common
 		}
 
 		#region Initialization of metadata
-//Proveri redosled
+		//Proveri redosled
 		private void InitializeTypeIdsInInsertOrder()
-		{			
-			typeIdsInInsertOrder.Add(ModelCode.EQUIPMENTCONTAINER);	
+		{
+			typeIdsInInsertOrder.Add(ModelCode.TOPOLOGICALNODE);
+			typeIdsInInsertOrder.Add(ModelCode.EQUIPMENTCONTAINER);
 			typeIdsInInsertOrder.Add(ModelCode.SWITCH);
+			typeIdsInInsertOrder.Add(ModelCode.CONNECTIVITYNODE);
 			typeIdsInInsertOrder.Add(ModelCode.TERMINAL);
 			typeIdsInInsertOrder.Add(ModelCode.MEASUREMENT);
-			typeIdsInInsertOrder.Add(ModelCode.TOPOLOGICALNODE);
-			typeIdsInInsertOrder.Add(ModelCode.CONNECTIVITYNODE);
 		}
 
 		private void InitializeNotSettablePropertyIds()

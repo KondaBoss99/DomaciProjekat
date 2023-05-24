@@ -1,17 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
 	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
-	<cim:EquipmentContainer rdf:ID="001">
-		<cim:IdentifiedObject.aliasName>Spondola</cim:IdentifiedObject.aliasName>
-		<cim:IdentifiedObject.mRID>Gordola</cim:IdentifiedObject.mRID>
-		<cim:IdentifiedObject.name>Kordola</cim:IdentifiedObject.name>
-	</cim:EquipmentContainer>
-
-
-	<cim:TopologicalNode rdf:ID="002">
-		<cim:IdentifiedObject.aliasName>Kitola</cim:IdentifiedObject.aliasName>
-		<cim:IdentifiedObject.mRID>Ptiola</cim:IdentifiedObject.mRID>
-		<cim:IdentifiedObject.name>Bitola</cim:IdentifiedObject.name>
+	
+	<cim:TopologicalNode rdf:ID="TOPOLOGICAL_NODE_1">
+		<cim:IdentifiedObject.aliasName>TopNode1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>TOPOLOGICAL_NODE_1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Topological Node 1</cim:IdentifiedObject.name>
 	</cim:TopologicalNode>
+	<cim:TopologicalNode rdf:ID="TOPOLOGICAL_NODE_2">
+		<cim:IdentifiedObject.aliasName>TopNode2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>TOPOLOGICAL_NODE_2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Topological Node 2</cim:IdentifiedObject.name>
+	</cim:TopologicalNode>
+	<cim:TopologicalNode rdf:ID="TOPOLOGICAL_NODE_3">
+		<cim:IdentifiedObject.aliasName>TopNode3</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>TOPOLOGICAL_NODE_3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Topological Node 3</cim:IdentifiedObject.name>
+	</cim:TopologicalNode>
+	
+	<cim:EquipmentContainer rdf:ID="EQUIPMENT_CONTAINER_1">
+		<cim:IdentifiedObject.aliasName>EquipCont1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>EQUIPMENT_CONTAINER_1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Equipment Container 1</cim:IdentifiedObject.name>
+	</cim:EquipmentContainer>
+	<cim:EquipmentContainer rdf:ID="EQUIPMENT_CONTAINER_2">
+		<cim:IdentifiedObject.aliasName>EquipCont2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>EQUIPMENT_CONTAINER_2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Equipment Container 2</cim:IdentifiedObject.name>
+	</cim:EquipmentContainer>
+	<cim:EquipmentContainer rdf:ID="EQUIPMENT_CONTAINER_3">
+		<cim:IdentifiedObject.aliasName>EquipCont3</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>EQUIPMENT_CONTAINER_3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Equipment Container 3</cim:IdentifiedObject.name>
+	</cim:EquipmentContainer>
+	
+	<cim:Switch rdf:ID="SWITCH_1">
+		<cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent>82795.31</cim:Switch.ratedCurrent>
+		<cim:Switch.retained>true</cim:Switch.retained>
+		<cim:Switch.switchOnCount>3</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>03-05-2023</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#EQUIPMENT_CONTAINER_1"/>
+		<cim:Equipment.normallyInService>false</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>Sw1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SWITCH_1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Switch 1</cim:IdentifiedObject.name>
+	</cim:Switch>
+	<cim:Switch rdf:ID="SWITCH_2">
+		<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent>795.1</cim:Switch.ratedCurrent>
+		<cim:Switch.retained>true</cim:Switch.retained>
+		<cim:Switch.switchOnCount>5</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>08-05-2023</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#EQUIPMENT_CONTAINER_1"/>
+		<cim:Equipment.normallyInService>true</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>Sw2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SWITCH_2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Switch 2</cim:IdentifiedObject.name>
+	</cim:Switch>
+	<cim:Switch rdf:ID="SWITCH_3">
+		<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent>895.3</cim:Switch.ratedCurrent>
+		<cim:Switch.retained>false</cim:Switch.retained>
+		<cim:Switch.switchOnCount>7</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>02-05-2023</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>true</cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#EQUIPMENT_CONTAINER_2"/>
+		<cim:Equipment.normallyInService>false</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>Sw3</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SWITCH_3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Switch 3</cim:IdentifiedObject.name>
+	</cim:Switch>
+	
+	<cim:ConnectivityNode rdf:ID="CONNECTIVITY_NODE_1">
+		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#EQUIPMENT_CONTAINER_2"/>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#TOPOLOGICAL_NODE_3"/>
+		<cim:IdentifiedObject.aliasName>ConNode1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>CONNECTIVITY_NODE_1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Connectivity Node 1</cim:IdentifiedObject.name>
+	</cim:ConnectivityNode>
+	<cim:ConnectivityNode rdf:ID="CONNECTIVITY_NODE_2">
+		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#EQUIPMENT_CONTAINER_3"/>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#TOPOLOGICAL_NODE_2"/>
+		<cim:IdentifiedObject.aliasName>ConNode2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>CONNECTIVITY_NODE_2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Connectivity Node 2</cim:IdentifiedObject.name>
+	</cim:ConnectivityNode>
+	<cim:ConnectivityNode rdf:ID="CONNECTIVITY_NODE_3">
+		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#EQUIPMENT_CONTAINER_2"/>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#TOPOLOGICAL_NODE_1"/>
+		<cim:IdentifiedObject.aliasName>ConNode3</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>CONNECTIVITY_NODE_3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Connectivity Node 3</cim:IdentifiedObject.name>
+	</cim:ConnectivityNode>
+	
+	<cim:Terminal rdf:ID="TERMINAL_1">
+		<cim:Terminal.ConductingEquipment rdf:resource="#SWITCH_2"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#CONNECTIVITY_NODE_2"/>
+		<cim:IdentifiedObject.aliasName>Ter1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>TERMINAL_1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Terminal 1</cim:IdentifiedObject.name>
+	</cim:Terminal>
+	<cim:Terminal rdf:ID="TERMINAL_2">
+		<cim:Terminal.ConductingEquipment rdf:resource="#SWITCH_2"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#CONNECTIVITY_NODE_2"/>
+		<cim:IdentifiedObject.aliasName>Ter2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>TERMINAL_2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Terminal 2</cim:IdentifiedObject.name>
+	</cim:Terminal>
+	<cim:Terminal rdf:ID="TERMINAL_3">
+		<cim:Terminal.ConductingEquipment rdf:resource="#SWITCH_2"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#CONNECTIVITY_NODE_1"/>
+		<cim:IdentifiedObject.aliasName>Ter3</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>TERMINAL_3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Terminal 3</cim:IdentifiedObject.name>
+	</cim:Terminal>
+	<cim:Terminal rdf:ID="TERMINAL_4">
+		<cim:Terminal.ConductingEquipment rdf:resource="#SWITCH_3"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#CONNECTIVITY_NODE_1"/>
+		<cim:IdentifiedObject.aliasName>Ter4</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>TERMINAL_4</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Terminal 4</cim:IdentifiedObject.name>
+	</cim:Terminal>
+	<cim:Terminal rdf:ID="TERMINAL_5">
+		<cim:Terminal.ConductingEquipment rdf:resource="#SWITCH_1"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#CONNECTIVITY_NODE_1"/>
+		<cim:IdentifiedObject.aliasName>Ter5</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>TERMINAL_5</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Terminal 5</cim:IdentifiedObject.name>
+	</cim:Terminal>
+	
+	<cim:Measurement rdf:ID="MEASUREMENT_1">
+		<cim:Measurement.PowerSystemResource rdf:resource="#SWITCH_3"/>
+		<cim:Measurement.Terminal rdf:resource="#TERMINAL_1"/>
+		<cim:IdentifiedObject.aliasName>Meas1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>MEASUREMENT_1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Measurement 1</cim:IdentifiedObject.name>
+	</cim:Measurement>
+	<cim:Measurement rdf:ID="MEASUREMENT_2">
+		<cim:Measurement.PowerSystemResource rdf:resource="#SWITCH_3"/>
+		<cim:Measurement.Terminal rdf:resource="#TERMINAL_2"/>
+		<cim:IdentifiedObject.aliasName>Meas2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>MEASUREMENT_2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Measurement 2</cim:IdentifiedObject.name>
+	</cim:Measurement>
+	<cim:Measurement rdf:ID="MEASUREMENT_3">
+		<cim:Measurement.PowerSystemResource rdf:resource="#EQUIPMENT_CONTAINER_3"/>
+		<cim:Measurement.Terminal rdf:resource="#TERMINAL_2"/>
+		<cim:IdentifiedObject.aliasName>Meas3</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>MEASUREMENT_3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Measurement 3</cim:IdentifiedObject.name>
+	</cim:Measurement>
+	<cim:Measurement rdf:ID="MEASUREMENT_4">
+		<cim:Measurement.PowerSystemResource rdf:resource="#EQUIPMENT_CONTAINER_3"/>
+		<cim:Measurement.Terminal rdf:resource="#TERMINAL_4"/>
+		<cim:IdentifiedObject.aliasName>Meas4</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>MEASUREMENT_4</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Measurement 4</cim:IdentifiedObject.name>
+	</cim:Measurement>
+	<cim:Measurement rdf:ID="MEASUREMENT_5">
+		<cim:Measurement.PowerSystemResource rdf:resource="#SWITCH_1"/>
+		<cim:Measurement.Terminal rdf:resource="#TERMINAL_4"/>
+		<cim:IdentifiedObject.aliasName>Meas5</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>MEASUREMENT_5</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Measurement 5</cim:IdentifiedObject.name>
+	</cim:Measurement>
+	<cim:Measurement rdf:ID="MEASUREMENT_6">
+		<cim:Measurement.PowerSystemResource rdf:resource="#SWITCH_1"/>
+		<cim:Measurement.Terminal rdf:resource="#TERMINAL_4"/>
+		<cim:IdentifiedObject.aliasName>Meas6</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>MEASUREMENT_6</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Measurement 6</cim:IdentifiedObject.name>
+	</cim:Measurement>
+	
 </rdf:RDF>
