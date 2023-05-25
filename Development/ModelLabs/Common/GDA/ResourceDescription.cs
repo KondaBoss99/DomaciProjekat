@@ -175,21 +175,21 @@ namespace FTN.Common
 		public void ExportToTerminal()
 		{
 			StringBuilder sb = new StringBuilder();
-
-			sb.Append("ResourceDescription");
-			sb.Append("id");
-			sb.Append("gid");
-			sb.Append(String.Format("0x{0:x16}", this.Id));
-			sb.Append("type");
-			sb.Append(((DMSType)ModelCodeHelper.ExtractTypeFromGlobalId(this.Id)).ToString());
-			sb.Append("\n"); // id
-			sb.Append("Properties");
+			sb.AppendLine();
+			sb.Append("<ResourceDescription>");
+			sb.Append($"\n\t<id gid=\"{String.Format("0x{0:x16}", this.Id)}\" type=\"{(DMSType)ModelCodeHelper.ExtractTypeFromGlobalId(this.Id)}\" />");
+			//sb.Append("gid");
+			//sb.Append(String.Format("0x{0:x16}", this.Id));
+			//sb.Append("type");
+			//sb.Append(((DMSType)ModelCodeHelper.ExtractTypeFromGlobalId(this.Id)).ToString());
+			sb.Append("\n\t<Properties>");
+			//sb.Append("Properties");
 			for (int i = 0; i < this.Properties.Count; i++)
 			{
-				sb.Append("Property");
-				sb.Append("id");
-				sb.Append(this.Properties[i].Id.ToString());
-				sb.Append("value");
+				sb.Append($"\n\t\t<Property id=\"{this.Properties[i].Id}\" value=\"");
+				//sb.Append("id");
+				//sb.Append(this.Properties[i].Id.ToString());
+				//sb.Append("value");
 				switch (Properties[i].Type)
 				{
 					case PropertyType.Float:
@@ -386,11 +386,16 @@ namespace FTN.Common
 					default:
 						throw new Exception("Failed to export Resource Description as XML. Invalid property type.");
 				}
+				sb.Append($"\" />");
 
-				sb.Append("\n"); // Property
+				//sb.Append("\n"); // Property
 			}
+			sb.Append("\n\t</Properties>");
+			sb.Append("\n</ResourceDescription>");
 
-            Console.WriteLine(sb.ToString());
+			sb.AppendLine();
+			sb.AppendLine();
+			Console.WriteLine(sb.ToString());
 
 			sb.Append("\n"); // Properties
 			sb.Append("\n"); // ResourceDescription
